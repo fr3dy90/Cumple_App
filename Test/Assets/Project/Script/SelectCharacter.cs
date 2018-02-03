@@ -4,13 +4,21 @@ using UnityEngine;
 
 public class SelectCharacter : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+	public Character m_char;
+    public GameObject model;
+    
+    private void Awake()
+    {
+        m_char = Resources.Load("Data/"+GlobalData.m_ref) as Character;
+    }
+
+    private void OnEnable()
+    {
+        model = Instantiate(m_char.model);
+    }
+
+    private void OnDisable()
+    {
+        Destroy(model);
+    }
 }
