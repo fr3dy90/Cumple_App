@@ -44,12 +44,15 @@ MonoBehaviour:
       ContainsMagnet: 0
   databaseLoad:
     dataSetsToLoad:
+    - Cumple_AR
     - VuforiaMars_Images
-    - VuforiaMars_Object_OT
     - VuforiaMars_VuMark
+    - VuforiaMars_Object_OT
     dataSetsToActivate:
-    - VuforiaMars_Object_OT
+    - Cumple_AR
+    - VuforiaMars_Images
     - VuforiaMars_VuMark
+    - VuforiaMars_Object_OT
   videoBackground:
     clippingMode: 0
     numDivisions: 2
@@ -65,6 +68,9 @@ MonoBehaviour:
     modelCorrectionMode: 0
     modelTransformEnabled: 0
     modelTransform: {x: 0, y: 0.1, z: -0.1}
+  smartTerrain:
+    autoInitTracker: 0
+    autoStartTracker: 0
   webcam:
     deviceNameSetInEditor: 
     flipHorizontally: 0
